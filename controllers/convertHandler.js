@@ -26,7 +26,7 @@ function ConvertHandler() {
       return str.split('/').reduce((p, c) => p / c);
     };
 
-    return fractionStrToDecimal(result);
+    return parseFloat(fractionStrToDecimal(result));
   };
 
   this.getUnit = function(input) {
